@@ -1,0 +1,591 @@
+				<!-- PAGE HEADER-->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="page-header">
+			
+									<div class="clearfix">
+										<h3 class="content-title pull-left">Manage Contacts</h3>
+									</div>
+									<div class="description">MaktApp</div>
+								</div>
+							</div>
+						</div>
+						<!-- /PAGE HEADER -->
+						<div class="">
+						<div class="option_group">
+						<div class="col-md-6 no-left-padding search_section">
+<div class="form-horizontal" role="form">
+                                <div class="form-inline ">
+                                    <div class="input-group input-medium">
+
+                <input name="" type="text" id="" class="form-control" placeholder="Search Here .." enterbutton="btnSearch" style="height:41px;">
+                                        <span class="input-group-btn btn-group">
+
+                                            <a id="ContentPlaceHolder1_btnSearch" class="btn btn-success btn-lg" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$btnSearch','')">
+                                                            <i class="fa fa-search"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+					</div>
+			<div class="col-md-6 no-right-padding pull-right btn_group_section">
+			<div class="btn_group">
+				 <a data-toggle="modal" data-target="#add_new" id="" class="btn btn-inverse tip " href="">
+				 <i class="fa  fa fa-plus"></i>New Contact </a>
+    <div class="btn-group dropdown">
+                                    <a class="btn btn-success tip dropdown-toggle " data-toggle="dropdown">
+                                        <i class="fa fa-filter"></i>
+                                        <span id="ContentPlaceHolder1_lblfilter">Filter</span>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                       
+                                        <li><a href="">Client</a></li>
+                                        <li><a href="">Manager</a></li>
+
+                                    </ul>
+                                </div>
+
+						<button type="submit" class="btn btn-primary start">
+			<i class="fa fa-print"></i>
+			<span>Print Contact</span>
+			</button>
+						<button type="submit" class="btn btn-primary start">
+			<i class="fa fa-mail-reply"></i>
+			<span>E-mail Selected</span>
+			</button>
+				</div>
+			</div>
+			</div>
+						
+			</div>
+							<div class="box border inverse table_form">
+									<div class="box-title">
+										<h4><i class="fa fa-users"></i>Contacts (22 total)</h4>
+										<div class="tools">
+									
+											<a href="javascript:;" class="reload">
+												<i class="fa fa-refresh"></i>
+											</a>
+											<a href="javascript:;" class="collapse">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+										
+										</div>
+									</div>
+									<div class="box-body">
+													<table class="qlabs_grid_container ">
+
+			
+				<!-- TABLE BODY -->
+				<tbody class="data_container">
+				
+					<!-- SUBHEADER -->
+					<!-- define optional columns width here -->
+					<tr class="subheader_row">
+						<td class="subheader_cell"></td>
+						<td class="subheader_cell">Select</td>
+						<td class="subheader_cell">Photo</td>
+						<td class="subheader_cell">Contact Name<div class="qlabs_tooltip">i<span><strong>Length</strong>This tooltip is positioned above a hovered item.</span></div></td> <!-- tooltip -->
+						<td class="subheader_cell">Phone</td>
+						<td class="subheader_cell">Email</td>
+						<td class="subheader_cell">Type</td>
+						<td class="subheader_cell">Action</td>
+					</tr>
+					<!-- / -->
+
+					<!-- ROW 1 -->
+					<tr class="data_odd">
+				<td class="data_cell"><label class="plus_more" for="row_1"><i class="fa fa-plus-square-o"></i></label></td>
+						<td class="data_cell">
+								<div class="checkbox ">
+                        <input  type="checkbox" id="inlineRadio1" value="" name="radioInline1">
+                        <label for="inlineRadio1"></label>
+	
+                    </div>
+						
+						</td>
+						<td class="data_cell"><img width="50" height="50" src="_content/img/profile/avatar.jpg"></td>
+						<td class="data_cell">Alaa Eita</td>
+						<td class="data_cell">+857 765 545</td>
+						<td class="data_cell">alaaabueta@gmail.com</td>
+						<td class="data_cell">Client</td>
+						<td class="data_cell">
+							<button class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+							<button class="btn btn-xs confirm-del-dialog btn-danger"><i class="fa fa-times"></i>Delete</button>
+							<label for="row_1" class="btn btn-xs view_details"><i class="fa fa-coffee"></i>View</label>
+						</td>
+					</tr>
+					<!-- expandable section -->
+				<tr class="expanded">
+						<td colspan="10">
+							<input id="row_1" name="#" type="checkbox" />
+							<div class="expanded">
+								<div class="column_1000">
+					
+									<div id="contact-card" class="panel panel-default">
+											
+												  <div class="panel-body">
+													<div id="card" class="row">
+														<div class="col-md-3 headshot">
+															<img src="_content/img/profile/avatar.jpg" alt="" height="150" width="180">
+														</div>
+														<div class="col-md-9">
+                                                            <table class="table table-hover">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-font"></i> Name</td>
+                                                                        <td id="card-name">John Doe</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-info"></i> Type</td>
+                                                                        <td id="card-name">Client</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-home"></i> Address</td>
+                                                                        <td>
+                                                                            795 Folsom Ave, Suite 600
+                                                                            San Francisco, CA 94107
+                                                                            P: (123) 456-7890
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-phone"></i> Phone</td>
+                                                                        <td>+001 8753-3648-002</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-envelope"></i> Email</td>
+                                                                        <td>sampleemail@gmail.com</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-quote-left"></i> Notes</td>
+                                                                        <td>
+                                                                            Note Note Note
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+														</div>
+													</div>
+												  </div>
+												</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				
+						<tr class="data_even">
+				<td class="data_cell"><label class="plus_more" for="row_2"><i class="fa fa-plus-square-o"></i></label></td>
+						<td class="data_cell">
+								<div class="checkbox ">
+                        <input  type="checkbox" id="inlineRadio2" value="" name="inlineRadio2">
+                        <label for="inlineRadio2"></label>
+	
+                    </div>
+						
+						</td>
+						<td class="data_cell"><img width="50" height="50" src="_content/img/profile/avatar.jpg"></td>
+						<td class="data_cell">Alaa Eita</td>
+						<td class="data_cell">+857 765 545</td>
+						<td class="data_cell">alaaabueta@gmail.com</td>
+						<td class="data_cell">Client</td>
+								<td class="data_cell">
+							<button class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+							<button class="btn btn-xs confirm-del-dialog btn-danger"><i class="fa fa-times"></i>Delete</button>
+							<label for="row_2" class="btn btn-xs view_details"><i class="fa fa-coffee"></i>View</label>
+						</td>
+					</tr>
+					<!-- expandable section -->
+				<tr class="expanded">
+						<td colspan="10">
+							<input id="row_2" name="#" type="checkbox" />
+							<div class="expanded">
+								<div class="column_1000">
+					
+									<div id="contact-card" class="panel panel-default">
+											
+												  <div class="panel-body">
+													<div id="card" class="row">
+														<div class="col-md-3 headshot">
+															<img src="_content/img/profile/avatar.jpg" alt="" height="150" width="180">
+														</div>
+														<div class="col-md-9">
+                                                            <table class="table table-hover">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-font"></i> Name</td>
+                                                                        <td id="card-name">John Doe</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-info"></i> Type</td>
+                                                                        <td id="card-name">Client</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-home"></i> Address</td>
+                                                                        <td>
+                                                                            795 Folsom Ave, Suite 600
+                                                                            San Francisco, CA 94107
+                                                                            P: (123) 456-7890
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-phone"></i> Phone</td>
+                                                                        <td>+001 8753-3648-002</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-envelope"></i> Email</td>
+                                                                        <td>sampleemail@gmail.com</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-quote-left"></i> Notes</td>
+                                                                        <td>
+                                                                            Note Note Note
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+														</div>
+													</div>
+												  </div>
+												</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<!-- / -->
+
+					<!-- ROW 3 -->
+								<tr class="data_odd">
+				<td class="data_cell"><label class="plus_more" for="row_3"><i class="fa fa-plus-square-o"></i></label></td>
+						<td class="data_cell">
+								<div class="checkbox ">
+                        <input  type="checkbox" id="inlineRadio3" value="" name="inlineRadio3">
+                        <label for="inlineRadio3"></label>
+	
+                    </div>
+						
+						</td>
+						<td class="data_cell"><img width="50" height="50" src="_content/img/profile/avatar.jpg"></td>
+						<td class="data_cell">Alaa Eita</td>
+						<td class="data_cell">+857 765 545</td>
+						<td class="data_cell">alaaabueta@gmail.com</td>
+						<td class="data_cell">Client</td>
+										<td class="data_cell">
+							<button class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+							<button class="btn btn-xs confirm-del-dialog btn-danger"><i class="fa fa-times"></i>Delete</button>
+							<label for="row_3" class="btn btn-xs view_details"><i class="fa fa-coffee"></i>View</label>
+						</td>
+					</tr>
+					<!-- expandable section -->
+						<tr class="expanded">
+						<td colspan="10">
+							<input id="row_3" name="#" type="checkbox" />
+							<div class="expanded">
+								<div class="column_1000">
+					
+									<div id="contact-card" class="panel panel-default">
+											
+												  <div class="panel-body">
+													<div id="card" class="row">
+														<div class="col-md-3 headshot">
+															<img src="_content/img/profile/avatar.jpg" alt="" height="150" width="180">
+														</div>
+														<div class="col-md-9">
+                                                            <table class="table table-hover">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-font"></i> Name</td>
+                                                                        <td id="card-name">John Doe</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-info"></i> Type</td>
+                                                                        <td id="card-name">Client</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-home"></i> Address</td>
+                                                                        <td>
+                                                                            795 Folsom Ave, Suite 600
+                                                                            San Francisco, CA 94107
+                                                                            P: (123) 456-7890
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-phone"></i> Phone</td>
+                                                                        <td>+001 8753-3648-002</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-envelope"></i> Email</td>
+                                                                        <td>sampleemail@gmail.com</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-quote-left"></i> Notes</td>
+                                                                        <td>
+                                                                            Note Note Note
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+														</div>
+													</div>
+												  </div>
+												</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<!-- / -->
+
+					<!-- ROW 4 -->
+								<tr class="data_even">
+				<td class="data_cell"><label class="plus_more" for="row_4"><i class="fa fa-plus-square-o"></i></label></td>
+						<td class="data_cell">
+								<div class="checkbox ">
+                        <input  type="checkbox" id="inlineRadio4" value="" name="inlineRadio4">
+                        <label for="inlineRadio4"></label>
+	
+                    </div>
+						
+						</td>
+						<td class="data_cell"><img width="50" height="50" src="_content/img/profile/avatar.jpg"></td>
+						<td class="data_cell">Alaa Eita</td>
+						<td class="data_cell">+857 765 545</td>
+						<td class="data_cell">alaaabueta@gmail.com</td>
+						<td class="data_cell">Client</td>
+								<td class="data_cell">
+							<button class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+							<button class="btn btn-xs confirm-del-dialog btn-danger"><i class="fa fa-times"></i>Delete</button>
+							<label for="row_4" class="btn btn-xs view_details"><i class="fa fa-coffee"></i>View</label>
+						</td>
+					</tr>
+					<!-- expandable section -->
+								<tr class="expanded">
+						<td colspan="10">
+							<input id="row_4" name="#" type="checkbox" />
+							<div class="expanded">
+								<div class="column_1000">
+					
+									<div id="contact-card" class="panel panel-default">
+											
+												  <div class="panel-body">
+													<div id="card" class="row">
+														<div class="col-md-3 headshot">
+															<img src="_content/img/profile/avatar.jpg" alt="" height="150" width="180">
+														</div>
+														<div class="col-md-9">
+                                                            <table class="table table-hover">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-font"></i> Name</td>
+                                                                        <td id="card-name">John Doe</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-info"></i> Type</td>
+                                                                        <td id="card-name">Client</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-home"></i> Address</td>
+                                                                        <td>
+                                                                            795 Folsom Ave, Suite 600
+                                                                            San Francisco, CA 94107
+                                                                            P: (123) 456-7890
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-phone"></i> Phone</td>
+                                                                        <td>+001 8753-3648-002</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-envelope"></i> Email</td>
+                                                                        <td>sampleemail@gmail.com</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-quote-left"></i> Notes</td>
+                                                                        <td>
+                                                                            Note Note Note
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+														</div>
+													</div>
+												  </div>
+												</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<!-- ROW 5 -->
+								<tr class="data_odd">
+				<td class="data_cell"><label class="plus_more" for="row_5"><i class="fa fa-plus-square-o"></i></label></td>
+						<td class="data_cell">
+								<div class="checkbox ">
+                        <input  type="checkbox" id="inlineRadio5" value="" name="inlineRadio5">
+                        <label for="inlineRadio5"></label>
+	
+                    </div>
+						
+						</td>
+						<td class="data_cell"><img width="50" height="50" src="_content/img/profile/avatar.jpg"></td>
+						<td class="data_cell">Alaa Eita</td>
+						<td class="data_cell">+857 765 545</td>
+						<td class="data_cell">alaaabueta@gmail.com</td>
+						<td class="data_cell">Client</td>
+									<td class="data_cell">
+							<button class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+							<button class="btn btn-xs confirm-del-dialog btn-danger"><i class="fa fa-times"></i>Delete</button>
+							<label for="row_5" class="btn btn-xs view_details"><i class="fa fa-coffee"></i>View</label>
+						</td>
+					</tr>
+					<!-- expandable section -->
+						<tr class="expanded">
+						<td colspan="10">
+							<input id="row_5" name="#" type="checkbox" />
+							<div class="expanded">
+								<div class="column_1000">
+					
+									<div id="contact-card" class="panel panel-default">
+											
+												  <div class="panel-body">
+													<div id="card" class="row">
+														<div class="col-md-3 headshot">
+															<img src="_content/img/profile/avatar.jpg" alt="" height="150" width="180">
+														</div>
+														<div class="col-md-9">
+															<table class="table table-hover">
+																<tbody>
+																  <tr>					
+																	<td><i class="fa fa-font"></i> Name</td>
+																	<td id="card-name">John Doe</td>
+																  </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-info"></i> Type</td>
+                                                                        <td id="card-name">Client</td>
+                                                                    </tr>
+																  <tr>
+																	<td><i class="fa fa-home"></i> Address</td>
+																	<td>795 Folsom Ave, Suite 600
+																		San Francisco, CA 94107
+																		P: (123) 456-7890 </td>
+																  </tr>
+																  <tr>
+																	<td><i class="fa fa-phone"></i> Phone</td>
+																	<td>+001 8753-3648-002</td>
+																  </tr>
+																  <tr>
+																	<td><i class="fa fa-envelope"></i> Email</td>
+																	<td>sampleemail@gmail.com</td>
+																  </tr>
+                                                                    <tr>
+                                                                        <td><i class="fa fa-quote-left"></i> Notes</td>
+                                                                        <td>
+                                                                            Note Note Note
+                                                                        </td>
+                                                                    </tr>
+																</tbody>
+															  </table>
+														</div>
+													</div>
+												  </div>
+												</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<!-- / -->
+
+				</tbody>
+			</table>
+										
+									</div>
+								</div>
+			
+						
+<!-------------------------------------------MODAL------------------------------------------------>
+						<div class="modal fade" id="add_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add/Edit Contact</h4>
+            </div>
+  <form id="form-send-article-to-friend" class="form-horizontal" role="form" novalidate="novalidate">
+				      <div class="modal-body">
+
+				          <div class="form-group">
+				            <label class="col-sm-3">Name :</label>
+				            <div class="col-sm-9">
+				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter Name">
+				            </div>
+				          </div>
+				        <div class="form-group">
+				            <label class="col-sm-3">Image :</label>
+				    <div class="col-sm-9">
+              <div class="file-group">
+
+                <input type="file" name="pic" id="pic">
+
+                <i class="fa fa-camera"></i> </div>
+				<img id="fileupload-new" class="thumbnail avatar" src="_content/img/uploads.png">
+            </div>
+				          </div>
+
+				          <div class="form-group">
+				            <label class="col-sm-3">Company Name:</label>
+				            <div class="col-sm-9">
+				              <input type="text" class="form-control" rows="3" name="Enter Name">
+				            </div>
+				          </div>
+				          <div class="form-group">
+				            <label class="col-sm-3">Type:</label>
+				            <div class="col-sm-9">
+				             <select class="form-control">
+							<option>company</option>	
+							<option>client</option>	
+							</select>
+				            </div>
+				          </div>
+						       <div class="form-group">
+				            <label class="col-sm-3">Phone:</label>
+				 <div class="col-sm-9">
+													 <div class="input-group">
+													  <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+													  <input type="text" class="form-control" placeholder="Mobile">
+													</div>
+													</div>
+				          </div>
+						        <div class="form-group">
+				            <label class="col-sm-3">Email:</label>
+<div class="col-sm-9">
+													 <div class="input-group">
+													  <span class="input-group-addon">@</span>
+													  <input type="text" class="form-control" placeholder="Email">
+													</div>
+													</div>
+				          </div>
+						         <div class="form-group">
+				            <label class="col-sm-3">Notes:</label>
+				            <div class="col-sm-9">
+				          <textarea class="form-control"></textarea>
+				            </div>
+				          </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="submit" class="btn btn-primary btn-md">Send</button>
+				        <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Cancel</button>
+				      </div>
+			        </form>
+
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------>
+						
+					</div>
+	<script type="text/javascript" src="_content/js/Custom.js"></script>
+<script>
+		jQuery(document).ready(function() {	
+App.setPage("widgets_box");  //Set current page
+			App.init(); //Initialise plugins and elements
+		});
+	</script>

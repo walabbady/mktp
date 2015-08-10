@@ -1,0 +1,158 @@
+<!-- UNIFORM -->
+
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" />
+	<link rel="stylesheet" type="text/css" href="_content/js/fullcalendar/fullcalendar.min.css" />
+
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>	
+	<script type="text/javascript" src="_content/js/uniform/jquery.uniform.min.js"></script>	
+<script type="text/javascript" src="_content/js/fullcalendar/fullcalendar.min.js"></script>
+				<!-- PAGE HEADER-->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="page-header">
+			
+									<div class="clearfix">
+										<h3 class="content-title pull-left">Manage Contacts</h3>
+									</div>
+									<div class="description">MaktApp</div>
+								</div>
+							</div>
+						</div>
+
+												<!-- CHAT -->
+						<div class="row">
+							<div class="col-md-12 ">
+												<div class="box border inverse-color">
+									<div class="box-title">
+<h4><i class="fa fa-calendar"></i><span class="hidden-inline-mobile">Calendar</span></h4>
+									</div>
+									<div class="box-body">
+										<div class="tabbable header-tabs">
+										  <ul class="nav nav-tabs">
+
+ <li><a href="#box_tab2" data-toggle="tab"><i class="fa fa-list"></i> <span class="hidden-inline-mobile">List View</span></a></li>
+<li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar"></i> <span class="hidden-inline-mobile">Calendar View</span></a></li>
+										  </ul>
+	 <div class="tab-content">
+	<div class="tab-pane fade in active" id="box_tab1">
+	<div id='calendar'></div>
+											 </div>
+											 <div class="tab-pane fade" id="box_tab2">
+<table class="qlabs_grid_container ">
+
+			
+				<!-- TABLE BODY -->
+				<tbody class="data_container">
+				
+					<!-- SUBHEADER -->
+					<!-- define optional columns width here -->
+					<tr class="subheader_row">
+						<td class="subheader_cell">Date</td> <!-- tooltip -->
+						<td class="subheader_cell">Title</td>
+						<td class="subheader_cell">Description</td>
+						<td class="subheader_cell">Action</td>
+					</tr>
+	
+								<tr class="data_odd">
+						<td class="data_cell">22/12/2015</td>
+						<td class="data_cell">Test Title</td>
+						<td class="data_cell">This tooltip is positioned above a hovered item.</td>
+									<td class="data_cell">
+							<button class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+							<button class="btn btn-xs confirm-del-dialog btn-danger"><i class="fa fa-times"></i>Delete</button>
+						</td>
+					</tr>
+								<tr class="data_even">
+						<td class="data_cell">22/12/2015</td>
+						<td class="data_cell">Test Title</td>
+						<td class="data_cell">This tooltip is positioned above a hovered item.</td>
+									<td class="data_cell">
+							<button class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+							<button class="btn btn-xs confirm-del-dialog btn-danger"><i class="fa fa-times"></i>Delete</button>
+						</td>
+					</tr>
+				<tr class="data_odd">
+						<td class="data_cell">22/12/2015</td>
+						<td class="data_cell">Test Title</td>
+						<td class="data_cell">This tooltip is positioned above a hovered item.</td>
+									<td class="data_cell">
+							<button class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+							<button class="btn btn-xs confirm-del-dialog btn-danger"><i class="fa fa-times"></i>Delete</button>
+						</td>
+					</tr>
+								<tr class="data_even">
+						<td class="data_cell">22/12/2015</td>
+						<td class="data_cell">Test Title</td>
+						<td class="data_cell">This tooltip is positioned above a hovered item.</td>
+									<td class="data_cell">
+							<button class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+							<button class="btn btn-xs confirm-del-dialog btn-danger"><i class="fa fa-times"></i>Delete</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+											 </div>
+								
+										  </div>
+									   </div>
+									</div>
+								</div>
+								<!-- BOX -->
+
+								<!-- /BOX -->
+							</div>
+
+
+						</div>
+
+						
+					</div>
+<!-------------------------------------------MODAL------------------------------------------------>
+						<div class="modal fade" id="createEventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add/Edit New Event</h4>
+            </div>
+  <form id="form-send-article-to-friend" class="form-horizontal" role="form" novalidate="novalidate">
+				      <div class="modal-body">
+                  <input type="hidden" id="apptStartTime"/>
+                  <input type="hidden" id="apptEndTime"/>
+                  <input type="hidden" id="apptAllDay" />
+                  <input type="hidden" id="calEvent" />
+				          <div class="form-group">
+				            <label class="col-sm-3">Event Title :</label>
+				            <div class="col-sm-9">
+				              <input type="text" class="form-control eTitle" rows="3" name="eTitle" placeholder="Enter Name">
+				            </div>
+				          </div>
+			
+						         <div class="form-group">
+				            <label class="col-sm-3">Event Description:</label>
+				            <div class="col-sm-9">
+				          <textarea name="eDesc" class="form-control eDesc"></textarea>
+				            </div>
+				          </div>
+				      </div>
+				      <div class="modal-footer">
+		<div data-toggle="tooltip" data-placement="right" title="Delete Event" id="deleteButton" class="pull-left"><i class="fa fa-times-circle-o"></i></div>
+	 <button id="submitButton" type="submit" class="btn btn-primary btn-md">Add</button>
+	 <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Cancel</button>
+				      </div>
+			        </form>
+
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------>
+			<script type="text/javascript" src="_content/js/timeago/jquery.timeago.min.js"></script>
+
+	<script type="text/javascript" src="_content/js/Custom.js"></script>
+	<script>
+		jQuery(document).ready(function() {	
+		    App.setPage("calendar");  //Set current page
+			App.init(); //Initialise plugins and elements
+		});
+
+	</script>

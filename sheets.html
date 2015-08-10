@@ -1,0 +1,178 @@
+				<!-- PAGE HEADER-->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="page-header">
+			
+									<div class="clearfix">
+										<h3 class="content-title pull-left">Manage Contacts</h3>
+									</div>
+									<div class="description">MaktApp</div>
+								</div>
+							</div>
+						</div>
+						<!-- /PAGE HEADER -->
+						<div class="row">
+		<div class="col-md-2">
+		<div class="innermenuspace ">
+		<div class="addnotes">
+		<button data-toggle="modal" data-target="#add_new_sheet" class="add-new-note btn btn-lg btn-block btn-one">New Sheet</button>	
+		</div>
+			<div class="sheets ">	
+		<ul class="listbadges clearfix">
+		<li>
+		<div class="title first ng-binding">Accounts</div>
+		<div class="time last  ng-binding">6:37 PM Apr 29, 2015</div>	
+		</li>
+		<li>
+		<div class="title first ng-binding">Accounts</div>
+		<div class="time last  ng-binding">6:37 PM Apr 29, 2015</div>	
+		</li>
+		</ul>	
+		</div>
+		</div>
+	
+					
+			</div>
+				<div class="col-md-10 no-left-padding">
+						<table class="sheets-table table table-bordered control" id="sortable1">
+							<thead>
+								<tr >
+<th class="">Website</th>
+<th class="">Username</th>
+<th class="">Password</th>
+<th class="Action">Action</th>
+			</tr>
+						</thead>
+			<tbody>
+
+<tr id="item_1">
+	<td><input class="sheet" type="text" value="test" ></td>
+	<td><input class="sheet" type="text" value="test" ></td>
+	<td><input class="sheet" type="text" value="test" ></td>
+	<td class="Action">
+		<button class="btn btn-xs confirm-del-dialog btn-success"><i class="fa fa-ellipsis-v"></i>Move</button>
+			<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+	</td>
+				</tr>
+<tr id="item_1">
+	<td><input class="sheet" type="text" value="test" ></td>
+	<td><input class="sheet" type="text" value="test" ></td>
+	<td><input class="sheet" type="text" value="test" ></td>
+	<td class="Action">
+		<button class="btn btn-xs confirm-del-dialog btn-success"><i class="fa fa-ellipsis-v"></i>Move</button>
+			<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+	</td>
+
+				</tr>	
+		</tbody></table>
+					<div class="addrow">
+		<button class="add-new-row btn btn-lg btn-block btn-one">	 Add New Row</button>	
+		</div>
+		</div>		
+			</div>			
+<!-------------------------------------------MODAL------------------------------------------------>
+						<div class="modal fade" id="add_new_sheet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add Sheet</h4>
+            </div>
+  <form id="form-send-article-to-friend" class="form-horizontal" role="form" novalidate="novalidate">
+				      <div class="modal-body">
+
+				          <div class="form-group">
+				            <label class="col-sm-3">Sheet Name :</label>
+				            <div class="col-sm-9">
+				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter Title">
+				            </div>
+				          </div>
+				       <div class="form-group">
+				            <label class="col-sm-3">No of Column :</label>
+				            <div class="col-sm-9">
+				              <input type="number" class="form-control" rows="3" name="myName" placeholder="No of Column">
+				            </div>
+				          </div>
+
+				      </div>
+				      <div class="modal-footer">
+				        <button type="submit" class="btn btn-primary btn-md">Create</button>
+				        <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Cancel</button>
+				      </div>
+			        </form>
+
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------>
+						
+					</div>
+  <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="_content/js/Custom.js"></script>
+<script>
+	getDate=function(){
+	var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+if(dd<10) {
+    dd='0'+dd
+} 
+if(mm<10) {
+    mm='0'+mm
+} 
+today = mm+'/'+dd+'/'+yyyy;
+		return today;
+	}
+$(document).on('click','#add_new_sheet button[type=submit]',function(event){
+	event.preventDefault()
+title=$('#add_new_sheet input[name=myName]').val();
+time=getDate();
+$('ul.listbadges').append('<li><div class="title first ng-binding">'+title+'</div><div class="time last  ng-binding">'+time+'</div></li>')	
+$('.modal').modal('hide');	
+})
+
+$(document).on('click','.add-new-row',function(event){
+$('.sheets-table tbody').prepend('<tr><td><input class="sheet" type="text"></td><td><input class="sheet" type="text"></td><td><input class="sheet" type="text"></td><td class="Action"><button class="btn btn-xs confirm-del-dialog btn-success"><i class="fa fa-ellipsis-v"></i>Move</button><button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button></td></tr>')
+		
+	   $("#sortable1 tbody").sortable({
+            opacity: 0.5,
+            scroll: false,
+            update: function () {
+               data = $(this).sortable('serialize');
+                   $.ajax({
+            type: "POST",
+            url: "ajax.php",
+        data: {pages:data},
+            success: function(aa){
+                console.log(aa);
+            }
+      });
+
+            }
+        }).disableSelection();
+})
+
+		$(document).on('click','.confirm-dialog',function(){
+			bootbox.confirm("Are you sure?", function(result){});
+		});
+	
+	   $("#sortable1 tbody").sortable({
+            opacity: 0.5,
+            scroll: false,
+		  handle: '.btn-success',
+		  cancel: '',
+            update: function () {
+               data = $(this).sortable('serialize');
+                   $.ajax({
+            type: "POST",
+            url: "ajax.php",
+        data: {pages:data},
+            success: function(aa){
+                console.log(aa);
+            }
+      });
+
+            }
+        }).disableSelection();
+	</script>

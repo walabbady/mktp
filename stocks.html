@@ -1,0 +1,796 @@
+		<link rel="stylesheet" type="text/css" href="_content/js/bootstrap-toggle/bootstrap-toggle.css"/>
+		<link rel="stylesheet" type="text/css" href="_content/css/fileicon.css"/>
+		<link rel="stylesheet" type="text/css" href="_content/css/animatecss/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="_content/css/flaticon/flaticon.css"/>
+	<link rel="stylesheet" type="text/css" href="_content/js/tablecloth/css/tablecloth.min.css" />
+
+	<script type="text/javascript" src="_content/js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+	<script type="text/javascript" src="_content/js/bootstrap-filestyle.js"></script>
+
+<!-- PAGE HEADER-->
+
+
+
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="page-header">
+			
+									<div class="clearfix">
+										<h3 class="content-title pull-left">Manage Stocks</h3>
+									</div>
+									<div class="description">MaktApp</div>
+								</div>
+							</div>
+						</div>
+						<!-- /PAGE HEADER -->
+						<div class="">
+						<div class="option_group">
+						<div class="col-md-6 no-left-padding search_section">
+<div class="form-horizontal" role="form">
+                                <div class="form-inline ">
+                                    <div class="input-group input-medium">
+
+                <input name="" type="text" id="" class="form-control btnSearch" placeholder="Search Here .." enterbutton="btnSearch" style="height:41px;">
+<div class="dropdown advance_search">
+  <i class="fa fa-list-ul dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+  
+  </i>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation">
+		  <div class="form-group">
+				     <div class="col-sm-12">
+				 <div class="input-group">
+<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+			  <input type="text" class="form-control datepicker" placeholder="Transaction Date">
+													</div>
+													</div>
+				          </div>
+		  <div class="form-group">
+				         <div class="col-sm-12">
+													 <div class="input-group">
+<span class="input-group-addon"><i class="fa fa-tags"></i></span>
+			  <input type="text" class="form-control" placeholder="Name">
+													</div>
+													</div>
+				          </div>
+	  <div class="form-group">
+				         <div class="col-sm-12">
+													 <div class="input-group">
+<span class="input-group-addon"><i class="fa fa-slack"></i></span>
+			  <input type="text" class="form-control" placeholder="Code">
+													</div>
+													</div>
+				          </div>
+	
+	
+	  <div class="form-group">
+				            <div class="col-sm-12">
+	<select class="form-control">
+	<option>Choose Category</option>							
+	<option>Food</option>							
+	<option>Electronics</option>							
+	<option>Furniture</option>							
+    </select>
+				            </div>
+				          </div>
+	
+		  <div class="form-group">
+				            <div class="col-sm-12">
+	<select class="form-control">
+	<option>Choose Location</option>							
+	<option>Main Store</option>							
+	<option>Store 1</option>							
+	<option>Store 2</option>							
+    </select>
+				            </div>
+				          </div>
+		  <div class="form-group">
+				            <div class="col-sm-12">
+	<button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+				            </div>
+				          </div>
+	  </li>
+
+  </ul>
+</div>	
+									
+                                        <span class="input-group-btn btn-group">
+
+                                            <a id="ContentPlaceHolder1_btnSearch" class="btn btn-success btn-lg" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$btnSearch','')">
+                                                            <i class="fa fa-search"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+					</div>
+			<div class="col-md-6 no-right-padding pull-right btn_group_section">
+			<div class="btn_group">
+				 <a data-toggle="modal" data-target="#add_new" id="" class="btn btn-inverse tip " href="">
+				 <i class="fa  fa fa-plus"></i>New Stock </a>
+	
+    <div class="btn-group dropdown">
+                                    <a class="btn btn-success tip dropdown-toggle " data-toggle="dropdown">
+                                        <i class="fa fa-filter"></i>
+                                        <span id="ContentPlaceHolder1_lblfilter">Filter</span>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                       
+                                        <li><a href="">Food</a></li>
+                                        <li><a href="">Electronics</a></li>
+                                        <li><a href="">Furniture</a></li>
+
+                                    </ul>
+                                </div>
+
+						<button type="submit" class="btn btn-primary start">
+			<i class="fa fa-print"></i>
+			<span>Print</span>
+			</button>
+
+				</div>
+			</div>
+			</div>
+						
+			</div>
+<div class="row document_bl">
+
+<div class="col-md-12">
+<div class="list_view stock_view">
+<div class="pop_over">
+<div class="col-md-6">
+<a class="stock_close" href="javascript:;"><i class="fa fa-times-circle-o"></i></a>
+<h3 class="item_name">Item Name</h3>	
+	<table class="table table-hover">
+                     <tbody>
+                       <tr>
+            <td><i class="fa fa-slack"></i> Item Code</td>
+           <td id="card-name">45654356</td>
+             </tr>
+               <tr>
+                <td><i class="fa fa-info"></i> Category</td>
+                 <td id="card-name">Phone</td>
+                  </tr>
+                    <tr>
+                  <td><i class="fa fa-map-marker"></i> Location</td>
+               <td>City Center</td>
+                 </tr>
+                 <tr>
+                 <td><i class="fa fa-quote-left"></i> Notes</td>
+                 <td>
+                  test test test accepted your connection request.
+                  </td>
+                  </tr>
+                  </tbody>
+                 </table>
+</div>
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-4 stat_bl">
+<div class="statistics"><span class="val">Quantity</span><span>5</span></div>	
+<div class="statistics"><span class="val">Cost</span><span>1,200 QR</span></div>	
+</div>	
+<div class="col-md-8">
+<figure><img class="thumbnail" src="_content/img/gallery/2.jpg"></figure>	
+</div>
+<div class="col-md-12 options options_action">
+<button data-toggle="modal" data-target="#add_in" class="btn btn-xs btn-info edit_cell"><i class="fa fa-plus-circle"></i>Add In</button>
+<button data-toggle="modal" data-target="#take_out" class="btn btn-xs btn-warning edit_cell"><i class="fa fa-minus-circle"></i>Take Out</button>
+<button data-toggle="modal" data-target="#add_new" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="mt10 mb10">
+<div class="scroller" data-height="250px" data-always-visible="1" data-rail-visible="1">
+<table class="table table_trans">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>User</th>
+            <th>Amount</th>
+            <th>Comment</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><span class="in"><i class="fa fa-angle-up"></i>IN</span></th>
+            <td>12/12/2015</td>
+            <td>Alaa</td>
+            <td><span class="inc">50</span></td>
+			<td>test test test accepted your connection request.</td>
+			<td>
+			<div class="options">
+<button data-toggle="modal" data-target="#add_in" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+
+</div>  
+			</td>
+          </tr>
+			        <tr>
+            <th scope="row"><span class="in"><i class="fa fa-angle-up"></i>IN</span></th>
+            <td>12/12/2015</td>
+            <td>Alaa</td>
+            <td><span class="inc">50</span></td>
+			<td>test test test accepted your connection request.</td>
+			<td>
+			<div class="options">
+<button data-toggle="modal" data-target="#add_in" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+
+</div>  
+			</td>
+          </tr>
+			        <tr>
+            <th scope="row"><span class="in"><i class="fa fa-angle-up"></i>IN</span></th>
+            <td>12/12/2015</td>
+            <td>Alaa</td>
+            <td><span class="inc">50</span></td>
+			<td>test test test accepted your connection request.</td>
+			<td>
+			<div class="options">
+<button data-toggle="modal" data-target="#add_in" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+
+</div>  
+			</td>
+          </tr>
+			        <tr>
+            <th scope="row"><span class="out"><i class="fa fa-angle-down"></i>OUT</span></th>
+            <td>12/12/2015</td>
+            <td>Alaa</td>
+            <td><span class="dec">50</span></td>
+			<td>test test test accepted your connection request.</td>
+			<td>
+			<div class="options">
+<button data-toggle="modal" data-target="#take_out" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+
+</div>  
+			</td>
+          </tr>
+      <tr>
+            <th scope="row"><span class="out"><i class="fa fa-angle-down"></i>OUT</span></th>
+            <td>12/12/2015</td>
+            <td>Alaa</td>
+            <td><span class="dec">50</span></td>
+			<td>test test test accepted your connection request.</td>
+			<td>
+			<div class="options">
+<button data-toggle="modal" data-target="#take_out" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+
+</div>  
+			</td>
+          </tr>
+			      <tr>
+            <th scope="row"><span class="in"><i class="fa fa-angle-up"></i>IN</span></th>
+            <td>12/12/2015</td>
+            <td>Alaa</td>
+            <td><span class="inc">50</span></td>
+			<td>test test test accepted your connection request.</td>
+			<td>
+			<div class="options">
+<button data-toggle="modal" data-target="#add_in" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+
+</div>  
+			</td>
+          </tr>
+			      <tr>
+            <th scope="row"><span class="out"><i class="fa fa-angle-down"></i>OUT</span></th>
+            <td>12/12/2015</td>
+            <td>Alaa</td>
+            <td><span class="dec">50</span></td>
+			<td>test test test accepted your connection request.</td>
+			<td>
+			<div class="options">
+<button data-toggle="modal" data-target="#take_out" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+
+</div>  
+			</td>
+          </tr>
+			      <tr>
+            <th scope="row"><span class="in"><i class="fa fa-angle-up"></i>IN</span></th>
+            <td>12/12/2015</td>
+            <td>Alaa</td>
+            <td><span class="inc">50</span></td>
+			<td>test test test accepted your connection request.</td>
+			<td>
+			<div class="options">
+<button data-toggle="modal" data-target="#add_in" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+
+</div>  
+			</td>
+          </tr>
+  <tr>
+            <th scope="row"><span class="out"><i class="fa fa-angle-down"></i>OUT</span></th>
+            <td>12/12/2015</td>
+            <td>Alaa</td>
+            <td><span class="dec">50</span></td>
+			<td>test test test accepted your connection request.</td>
+			<td>
+			<div class="options">
+<button data-toggle="modal" data-target="#take_out" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button>
+
+</div>  
+			</td>
+          </tr>
+        </tbody>
+      </table>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+	<table class="table table-paper table-striped stocks">
+		
+											<thead>
+											  <tr>
+								<th class="data_cell">
+								<div class="checkbox ">
+                        <input type="checkbox" id="inlineRadioall" value="" name="radioInline1">
+                        <label for="inlineRadioall"></label>
+	
+                    </div>
+						
+						</th>
+			<th>Item Name</th>
+		    <th>Quantity</th>
+		    <th>Category</th>
+		    <th>Cost</th>
+		    <th>Location</th>
+			<th class="status_pr">Status</th>
+											  </tr>
+											</thead>
+											<tbody>
+
+											  <tr>
+							    <td class="data_cell">
+								<div class="checkbox ">
+                        <input type="checkbox" id="inlineRadio1" value="" name="radioInline1">
+                        <label for="inlineRadio1"></label></div></td>
+				<td class="col-md-3 item_name_bl"><span  class="code">3444</span>
+			<label class="">Iphone 6 plus +128M</label></td>
+			    <td class="col-md-1"><span class="amount">50</span></td>
+				<td class="col-md-2">Phone</td>
+			    <td class="col-md-2"><span class="cost">1,200 QR </span></td>
+				<td class="col-md-2">City Center</td>
+				<td class="col-md-2">
+					<button data-toggle="modal" data-target="#add_new" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+	<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button></td>
+ </tr>
+																						  <tr>
+							    <td class="data_cell">
+								<div class="checkbox ">
+                        <input type="checkbox" id="inlineRadio3" value="" name="radioInline1">
+                        <label for="inlineRadio3"></label></div></td>
+				<td class="col-md-3 item_name_bl"><span  class="code">3444</span>
+			<label class="">Iphone 6 plus +128M</label></td>
+			    <td class="col-md-1"><span class="amount">50</span></td>
+				<td class="col-md-2">Phone</td>
+			    <td class="col-md-2"><span class="cost">1,200 QR </span></td>
+				<td class="col-md-2">City Center</td>
+				<td class="col-md-2">
+					<button data-toggle="modal" data-target="#add_new" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+	<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button></td>
+ </tr>
+								<tr>
+							    <td class="data_cell">
+								<div class="checkbox ">
+                        <input type="checkbox" id="inlineRadio2" value="" name="radioInline1">
+                        <label for="inlineRadio2"></label></div></td>
+				<td class="col-md-3 item_name_bl"><span  class="code">3444</span>
+			<label class="">Iphone 6 plus +128M</label></td>
+			    <td class="col-md-1"><span class="amount">50</span></td>
+				<td class="col-md-2">Phone</td>
+			    <td class="col-md-2"><span class="cost">1,200 QR </span></td>
+				<td class="col-md-2">City Center</td>
+				<td class="col-md-2">
+					<button data-toggle="modal" data-target="#add_new" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+	<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button></td>
+ </tr>
+							<tr>
+							    <td class="data_cell">
+								<div class="checkbox ">
+                        <input type="checkbox" id="inlineRadio4" value="" name="radioInline1">
+                        <label for="inlineRadio4"></label></div></td>
+				<td class="col-md-3 item_name_bl"><span  class="code">3444</span>
+			<label class="">Iphone 6 plus +128M</label></td>
+			    <td class="col-md-1"><span class="amount">50</span></td>
+				<td class="col-md-2">Phone</td>
+			    <td class="col-md-2"><span class="cost">1,200 QR </span></td>
+				<td class="col-md-2">City Center</td>
+				<td class="col-md-2">
+					<button data-toggle="modal" data-target="#add_new" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+	<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button></td>
+ </tr>
+							<tr>
+							    <td class="data_cell">
+								<div class="checkbox ">
+                        <input type="checkbox" id="inlineRadio5" value="" name="radioInline1">
+                        <label for="inlineRadio5"></label></div></td>
+				<td class="col-md-3 item_name_bl"><span  class="code">3444</span>
+			<label class="">Iphone 6 plus +128M</label></td>
+			    <td class="col-md-1"><span class="amount">50</span></td>
+				<td class="col-md-2">Phone</td>
+			    <td class="col-md-2"><span class="cost">1,200 QR </span></td>
+				<td class="col-md-2">City Center</td>
+				<td class="col-md-2">
+					<button data-toggle="modal" data-target="#add_new" class="btn btn-xs btn-primary edit_cell"><i class="fa fa-pencil"></i>Edit</button>
+	<button class="btn btn-xs confirm-del-dialog btn-danger confirm-dialog"><i class="fa fa-times"></i>Delete</button></td>
+ </tr>
+</tbody>
+</table>
+
+	
+
+</div>
+	
+
+</div>	
+
+	</div>
+</div>
+
+			
+						
+<!-------------------------------------------MODAL------------------------------------------------>
+						<div class="modal fade" id="add_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add/Edit Stock</h4>
+            </div>
+  <form id="form-send-article-to-friend" class="form-horizontal" role="form" novalidate="novalidate">
+				      <div class="modal-body">
+
+				          <div class="form-group">
+				            <label class="col-sm-3">Item Name :</label>
+				            <div class="col-sm-9">
+				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter Item">
+				            </div>
+				          </div>
+						     <div class="form-group">
+				            <label class="col-sm-3">Item Code :</label>
+				            <div class="col-sm-9">
+				            <div class="input-group">
+<span class="input-group-addon"><i class="fa fa-slack"></i></span>
+			  <input type="text" class="form-control" placeholder="Item Code">
+													</div>
+				            </div>
+				          </div>
+									<div class="form-group">
+										<label class="col-sm-3">Picture</label>
+										<div class="col-sm-9">	<input type="file" class="test"></div>
+									</div>
+     <div class="form-group">
+				            <label class="col-sm-3">Category:</label>
+				            <div class="col-sm-9">
+				             <select class="form-control">
+							<option>Choose Category</option>	
+							<option>Food</option>	
+							<option>Electronics</option>	
+							<option>Furniture</option>	
+							</select>
+				            </div>
+				          </div>
+		
+				    	   <div class="form-group">
+				            <label class="col-sm-3">Quantity :</label>
+				            <div class="col-sm-9">
+				            <div class="input-group">
+<span class="input-group-addon"><i class="fa fa-cubes"></i></span>
+			  <input type="number" class="form-control" placeholder="Quantity">
+													</div>
+				            </div>
+				          </div>
+						   <div class="form-group">
+				            <label class="col-sm-3">Amount :</label>
+				            <div class="col-sm-9">
+				            <div class="input-group">
+<span class="input-group-addon"><i class="fa fa-recycle"></i></span>
+			  <input type="number" class="form-control" placeholder="Amount">
+													</div>
+				            </div>
+				          </div>
+			     <div class="form-group">
+				            <label class="col-sm-3">Location:</label>
+				            <div class="col-sm-9">
+				             <select class="form-control">
+							<option>Choose Location</option>	
+							<option>Main Store</option>	
+							<option>Store 1</option>	
+							<option>Store 2</option>	
+							</select>
+				            </div>
+				          </div>
+						  <div class="form-group">
+				            <label class="col-sm-3">Description:</label>
+				            <div class="col-sm-9">
+				          <textarea class="form-control"></textarea>
+				            </div>
+				          </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="submit" class="btn btn-primary btn-md">Add</button>
+				        <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Cancel</button>
+				      </div>
+			        </form>
+
+        </div>
+    </div>
+</div>
+	
+	
+						<div class="modal fade" id="add_in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Item Transactions (IN)</h4>
+            </div>
+  <form id="form-send-article-to-friend" class="form-horizontal" role="form" novalidate="novalidate">
+				      <div class="modal-body">
+	   <div class="form-group">
+				            <label class="col-sm-3">Quantity :</label>
+				            <div class="col-sm-9">
+				            <div class="input-group">
+<span class="input-group-addon"><i class="fa fa-cubes"></i></span>
+			  <input type="number" class="form-control" placeholder="Quantity">
+													</div>
+				            </div>
+				          </div>
+		   <div class="form-group">
+				            <label class="col-sm-3">Date :</label>
+				            <div class="col-sm-9">
+					 <div class="input-group">
+<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+			  <input type="text" class="form-control datepicker" placeholder="Date">
+													</div>
+				            </div>
+				          </div>
+		
+	
+     <div class="form-group">
+				            <label class="col-sm-3">Status:</label>
+				            <div class="col-sm-9">
+						<div class="form-group">
+				            <div class="col-sm-9">
+            									<div class="radio ">
+                        <input  type="radio" id="inlineRadio11" value="1" name="radioInline11">
+                        <label for="inlineRadio11">New Stok</label>
+	
+                    </div>
+
+				            </div>
+				          </div>
+					         <div class="form-group">
+				            <div class="col-sm-9">
+                        
+								
+													<div class="radio ">
+                        <input  type="radio" id="inlineRadio12" value="2" name="radioInline11">
+                        <label for="inlineRadio12">Return </label>
+	
+                    </div>
+
+				            </div>
+				          </div>
+				
+				            </div>
+				          </div>
+		
+						  <div class="form-group">
+				            <label class="col-sm-3">Comment:</label>
+				            <div class="col-sm-9">
+				          <textarea class="form-control"></textarea>
+				            </div>
+				          </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="submit" class="btn btn-primary btn-md">Add</button>
+				        <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Cancel</button>
+				      </div>
+			        </form>
+
+        </div>
+    </div>
+</div>
+							<div class="modal fade" id="take_out" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Item Transactions (OUT)</h4>
+            </div>
+  <form id="form-send-article-to-friend" class="form-horizontal" role="form" novalidate="novalidate">
+				      <div class="modal-body">
+	   <div class="form-group">
+				            <label class="col-sm-3">Quantity :</label>
+				            <div class="col-sm-9">
+				            <div class="input-group">
+<span class="input-group-addon"><i class="fa fa-cubes"></i></span>
+			  <input type="number" class="form-control" placeholder="Quantity">
+													</div>
+				            </div>
+				          </div>
+		   <div class="form-group">
+				            <label class="col-sm-3">Date :</label>
+				            <div class="col-sm-9">
+					 <div class="input-group">
+<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+			  <input type="text" class="form-control datepicker" placeholder="Date">
+													</div>
+				            </div>
+				          </div>
+		
+	     <div class="form-group">
+				            <label class="col-sm-3">Status:</label>
+				            <div class="col-sm-9">
+						<div class="form-group">
+				            <div class="col-sm-9">
+            									<div class="radio ">
+                        <input  type="radio" id="inlineRadio16" value="1" name="radioInline12">
+                        <label for="inlineRadio16">Sales</label>
+	
+                    </div>
+
+				            </div>
+				          </div>
+					         <div class="form-group">
+				            <div class="col-sm-9">
+                        
+								
+													<div class="radio ">
+                        <input  type="radio" id="inlineRadio15" value="2" name="radioInline12">
+                        <label for="inlineRadio15">Damaged </label>
+	
+                    </div>
+
+				            </div>
+				          </div>
+				
+				            </div>
+				          </div>
+
+		
+						  <div class="form-group">
+				            <label class="col-sm-3">Comment:</label>
+				            <div class="col-sm-9">
+				          <textarea class="form-control"></textarea>
+				            </div>
+				          </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="submit" class="btn btn-primary btn-md">Add</button>
+				        <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Cancel</button>
+				      </div>
+			        </form>
+
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------>
+						
+					</div>
+	<script type="text/javascript" src="_content/js/bootstrap-toggle/bootstrap-toggle.js"></script>
+	<script type="text/javascript" src="_content/js/Custom.js"></script>
+<script>
+		jQuery(document).ready(function() {	
+/////Check if Arabic style exist [you must change it to  check session Lang]
+scriptName="arabic.css";
+if($("link[href*='"+scriptName+"']").length==0){
+direc_initial={right:0};
+direc_swap={right:-500};
+direc_hide={right:-1000};
+}		
+else{
+direc_initial={left:0};
+direc_swap={left:-500};
+direc_hide={left:-1000};
+
+}		
+			
+			
+			$('.table.stocks .code + label').click(function(){
+				$('.table.stocks tr').removeClass('current')
+				$(this).closest('tr').addClass('current')
+				if($('.pop_over').hasClass("actived")==false){
+							$('.pop_over').addClass('actived');
+				$('.pop_over').animate(direc_initial,200)
+				}
+				else{
+				$('.pop_over').animate(direc_swap,200)		
+				$('.pop_over').animate(direc_initial,200)		
+				}
+			})
+			$('.stock_view .stock_close').click(function(event){
+				$('.pop_over').removeClass('actived');
+				$('.pop_over').animate(direc_hide,200)
+			$('.table.stocks tr').removeClass('current')
+			event.stopPropagation()
+			})
+$('table.stocks,.pop_over,.modal#add_in,.modal#take_out,.modal#add_new').click(function(event){
+			event.stopPropagation()
+
+})
+
+$('[data-target="#add_in"]').click(function(){
+$('.modal#add_in').modal('show'); 
+})
+$('[data-target="#take_out"]').click(function(){
+$('.modal#take_out').modal('show'); 
+})
+$('[data-target="#add_new"]').click(function(){
+$('.modal#add_new').modal('show'); 
+})
+				
+			$(document).click(function(event){
+		$('.pop_over').removeClass('actived');
+				$('.pop_over').animate(direc_hide,200)
+								$('.table.stocks tr').removeClass('current')
+			})
+			
+/////Check if Arabic style exist [you must change it to  check session Lang]
+			
+			
+			// nultiple initialize
+			$('.test').filestyle({
+				buttonName : 'btn-primary'
+			});
+					$(".datepicker").datepicker();
+
+			$('.document_bl .doc_categry').click(function(){
+			$('.document_bl .doc_categry').removeClass('active')
+			$(this).addClass('active')
+			})
+			
+
+			$('.stocks thead th.data_cell input').click(function(event) {   
+    if(this.checked) {
+        // Iterate each checkbox
+        $(':checkbox').each(function() {
+            this.checked = true;  
+        });
+    }
+	else{
+	  $(':checkbox').each(function() {
+            this.checked = false;  
+
+        });                       
+
+	}
+});
+
+
+
+				$('.filter-content').hover(function() {
+			var hoverContent = $(this).children('.hover-content');
+			hoverContent.removeClass('fadeOut').addClass('animated fadeIn').show();
+		}, function() {
+			var hoverContent = $(this).children('.hover-content');
+			hoverContent.removeClass('fadeIn').addClass('fadeOut');
+		});
+			
+			
+			$('.advance_search .dropdown-menu').click(function(event){
+     event.stopPropagation();
+ });
+			$(document).on('click','.confirm-dialog',function(){
+			bootbox.confirm("Are you sure?", function(result){});
+		});
+
+App.setPage("widgets_box");  //Set current page
+			App.init(); //Initialise plugins and elements
+		});
+	</script>
