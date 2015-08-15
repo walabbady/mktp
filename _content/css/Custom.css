@@ -2042,7 +2042,57 @@ background-color: #4d5669 !important;
 table.stocks tr.current span.code,table.stocks tr.current label,table.stocks tr.current span.cost,table.stocks tr.current td{
 color: #fff
 }
+.setting_bl #LookupsDiv{
+padding-top: 0
+}
+.setting_bl .lookups_bl{
+padding-left: 0
+}
+.setting_bl .new_lookup{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+.setting_bl .new_lookup i,.setting_bl .new_user i{
+	    margin-right: 5px;
+}
+.setting_bl .new_user{
+     margin-bottom: 10px;
+    border-radius: 2px;
+    margin-left: 25px;
+}
+.add_new_menu .checkbox {
 
+}
+.add_new_menu .checkbox label{
+top: -17px;
+}
+.avatar_profile{
+
+}
+.avatar_profile figure{
+    float: right;
+    width: 200px;
+    overflow: hidden;
+}
+.avatar_profile figure img{
+      width: 100%;
+    margin: 0;
+}
+.avatar_profile figure button{
+position: absolute;
+    z-index: 987888;
+    bottom: 5px;
+    width: 190px;
+    border-radius: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(80, 122, 164, 0.9);
+    height: 30px;
+}
+.avatar_profile figure button:hover,.avatar_profile figure button:focus{
+    background-color: rgba(80, 122, 164, 0.9);border-width: 0
+}
 @media only screen and (max-width: 1200px){
 .btn_group_section{width: auto;
   float: none !important;

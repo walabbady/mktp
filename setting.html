@@ -1,0 +1,460 @@
+		<link rel="stylesheet" type="text/css" href="_content/js/bootstrap-toggle/bootstrap-toggle.css"/>
+		<link rel="stylesheet" type="text/css" href="_content/css/fileicon.css"/>
+		<link rel="stylesheet" type="text/css" href="_content/css/animatecss/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="_content/css/flaticon/flaticon.css"/>
+	<script type="text/javascript" src="_content/js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+	<script type="text/javascript" src="_content/js/bootstrap-filestyle.js"></script>
+
+<!-- PAGE HEADER-->
+
+
+
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="page-header">
+			
+									<div class="clearfix">
+										<h3 class="content-title pull-left">Manage Contacts</h3>
+									</div>
+									<div class="description">MaktApp</div>
+								</div>
+							</div>
+						</div>
+<div class="row">
+							<div class="col-md-12 ">
+												<div class="box border inverse-color">
+									<div class="box-title">
+<h4><i class="fa fa-cog"></i><span class="hidden-inline-mobile">Settings</span></h4>
+									</div>
+									<div class="box-body">
+										<div class="tabbable header-tabs">
+										  <ul class="nav nav-tabs">
+
+ <li class="active"><a href="#Lookups" data-toggle="tab"><i class="fa fa-rss"></i> <span class="hidden-inline-mobile">Lookups</span></a></li>
+<li class=""><a href="#users" data-toggle="tab"><i class="fa fa-bookmark"></i> <span class="hidden-inline-mobile">Users</span></a></li>
+<li class=""><a href="#menus" data-toggle="tab"><i class="fa fa-bookmark"></i> <span class="hidden-inline-mobile">Menus</span></a></li>
+<li class=""><a href="#profiles" data-toggle="tab"><i class="fa fa-rss"></i> <span class="hidden-inline-mobile">Profiles</span></a></li>
+										  </ul>
+	 <div class="tab-content">
+	<div class="tab-pane fade active in" id="Lookups">
+	<div class="row setting_bl">
+<div class="col-md-3">
+<a data-toggle="modal" data-target="#add_new_lookup" id="" class="btn btn-inverse tip new_lookup " href="" data-original-title="" title="">
+<i class="fa  fa fa-plus"></i>New_Lookup</a>
+<div class="doc_categry active"><i class="fa fa-tags"></i>ContactType</div>
+<div class="doc_categry"><i class="fa fa-user"></i>PeriortyType</div>
+<div class="doc_categry"><i class="fa fa-sitemap"></i>TransactionType</div>
+<div class="doc_categry"><i class="fa fa-arrows"></i>DocumentCategory</div>
+<div class="doc_categry"><i class="fa fa-suitcase"></i>StockCategory</div>
+			</div>
+<div class="col-md-9 lookups_bl">
+<div class="box-body" id="LookupsDiv">
+                                <table class="qlabs_grid_container ">
+                                    <tbody class="data_container">
+
+                                        <!-- SUBHEADER -->
+                                        <!-- define optional columns width here -->
+                                        <tr class="subheader_row">
+                                            
+                                            <td class="subheader_cell"> English Title </td>
+                                            <td class="subheader_cell">Arabic Title </td>
+                                            <td class="subheader_cell">Serial Number</td>
+                                            <td class="subheader_cell">Actions</td>
+                                        </tr>
+                                                <tr class="data_odd" type="1">
+
+                                                    <td class="data_cell">Vendorr</td>
+                                                    <td class="data_cell">فيندور</td>
+                                                    <td class="data_cell">123</td>
+                                                    <td class="data_cell col-lg-2">
+                                                        <button class="btn btn-xs btn-primary edit_cell" data-toggle="modal" data-target="#add_new_lookup" onclick="loadpopuplookup(1);"><i class=" fa fa-pencil"></i>Edit</button>
+                                                        <button class="btn btn-xs confirm-del-dialog btn-danger" onclick="deletelookup(1)"><i class=" fa fa-times"></i>Delete</button>
+                                                        <label for="row_1" class="btn btn-xs view_details"><i class="fa fa-coffee"></i>View</label>
+                                                    </td>
+                                                </tr>
+                                                <tr class="data_odd" type="2">
+
+                                                    <td class="data_cell">Personn</td>
+                                                    <td class="data_cell">شخص</td>
+                                                    <td class="data_cell">123</td>
+                                                    <td class="data_cell col-lg-2">
+                                                        <button class="btn btn-xs btn-primary edit_cell" data-toggle="modal" data-target="#add_new_lookup" onclick="loadpopuplookup(2);"><i class=" fa fa-pencil"></i>Edit</button>
+                                                        <button class="btn btn-xs confirm-del-dialog btn-danger" onclick="deletelookup(2)"><i class=" fa fa-times"></i>Delete</button>
+                                                        <label for="row_1" class="btn btn-xs view_details"><i class="fa fa-coffee"></i>View</label>
+                                                    </td>
+                                                </tr>
+                                                <tr class="data_odd" type="3">
+
+                                                    <td class="data_cell">Client</td>
+                                                    <td class="data_cell">عميل بعد التعديل</td>
+                                                    <td class="data_cell">123</td>
+                                                    <td class="data_cell col-lg-2">
+                                                        <button class="btn btn-xs btn-primary edit_cell" data-toggle="modal" data-target="#add_new_lookup" onclick="loadpopuplookup(3);"><i class=" fa fa-pencil"></i>Edit</button>
+                                                        <button class="btn btn-xs confirm-del-dialog btn-danger" onclick="deletelookup(3)"><i class=" fa fa-times"></i>Delete</button>
+                                                        <label for="row_1" class="btn btn-xs view_details"><i class="fa fa-coffee"></i>View</label>
+                                                    </td>
+                                                </tr>
+                                                <tr class="data_odd" type="24">
+
+                                                    <td class="data_cell">manager</td>
+                                                    <td class="data_cell">مدير</td>
+                                                    <td class="data_cell">5555</td>
+                                                    <td class="data_cell col-lg-2">
+                                                        <button class="btn btn-xs btn-primary edit_cell" data-toggle="modal" data-target="#add_new_lookup" onclick="loadpopuplookup(24);"><i class=" fa fa-pencil"></i>Edit</button>
+                                                        <button class="btn btn-xs confirm-del-dialog btn-danger" onclick="deletelookup(24)"><i class=" fa fa-times"></i>Delete</button>
+                                                        <label for="row_1" class="btn btn-xs view_details"><i class="fa fa-coffee"></i>View</label>
+                                                    </td>
+                                                </tr>
+                                                <tr class="data_odd" type="29">
+
+                                                    <td class="data_cell">Goverment</td>
+                                                    <td class="data_cell">حكومي</td>
+                                                    <td class="data_cell">0</td>
+                                                    <td class="data_cell col-lg-2">
+                                                        <button class="btn btn-xs btn-primary edit_cell" data-toggle="modal" data-target="#add_new_lookup" onclick="loadpopuplookup(29);"><i class=" fa fa-pencil"></i>Edit</button>
+                                                        <button class="btn btn-xs confirm-del-dialog btn-danger" onclick="deletelookup(29)"><i class=" fa fa-times"></i>Delete</button>
+                                                        <label for="row_1" class="btn btn-xs view_details"><i class="fa fa-coffee"></i>View</label>
+                                                    </td>
+                                                </tr>
+
+
+                                    </tbody>
+                                </table>
+
+                            </div>		
+</div>
+</div>	
+		
+	 </div>
+	<div class="tab-pane fade" id="users">
+
+		<div class="row setting_bl">
+<a data-toggle="modal" data-target="#add_new_user" id="" class="btn btn-inverse tip new_user col-md-3 " href="" data-original-title="" title="">
+<i class="fa  fa fa-plus"></i>New_User</a>
+<div class="col-md-12">
+<div class="box-body" id="LookupsDiv">
+                                <table class="qlabs_grid_container ">
+                                    <tbody class="data_container">
+
+                                        <!-- SUBHEADER -->
+                                        <!-- define optional columns width here -->
+                          <tr class="subheader_row">
+
+                                        <td class="subheader_cell">User Name</td>
+                                        <td class="subheader_cell">Email Address</td>
+                                        <td class="subheader_cell">Full Name</td>
+                                        <td class="subheader_cell">Phone</td>
+                                        <td class="subheader_cell">Image</td>
+                                        <td class="subheader_cell">Actions</td>
+                                    </tr>
+                                     <tr class="data_odd" type="user.UserId">
+                                                <td class="data_cell">Waleed@MaktApp.com</td>
+                                                <td class="data_cell">Waleed@MaktApp.com</td>
+                                                <td class="data_cell">Waleed Alobady </td>
+                                                <td class="data_cell">30008709</td>
+                                                <td class="data_cell">
+<img width="50" height="50" src="_content/img/avatars/555831_10202000175116884_1881670780_n.jpg">
+                                                </td>
+
+
+                                                <td class="data_cell col-lg-2">
+            <button class="btn btn-xs btn-primary edit_cell" data-toggle="modal" data-target="#add_new_user"><i class="fa fa-pencil"></i>Edit</button>
+                                                    <button class="btn btn-xs confirm-del-dialog btn-danger" onclick="deleteUser(1)"><i class="fa fa-times"></i>Delete</button>
+                                                    <label for="row_1" class="btn btn-xs view_details"><i class="fa fa-coffee"></i>View</label>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>		
+</div>
+</div>		
+		
+    </div>
+	<div class="tab-pane fade" id="menus">
+		<div class="row setting_bl">
+<a data-toggle="modal" data-target="#add_new_menu" id="" class="btn btn-inverse tip new_user col-md-3 " href="" data-original-title="" title="">
+<i class="fa  fa fa-plus"></i>New Menu</a>
+<div class="col-md-12">
+<div class="box-body" id="LookupsDiv">
+                                <table class="qlabs_grid_container ">
+                                    <tbody class="data_container">
+
+                                        <!-- SUBHEADER -->
+                                        <!-- define optional columns width here -->
+                          <tr class="subheader_row">
+
+                                        <td class="subheader_cell">Arabic Title</td>
+                                        <td class="subheader_cell">English Title</td>
+                                        <td class="subheader_cell">Icon</td>
+                                        <td class="subheader_cell">Actions</td>
+                                    </tr>
+                                     <tr class="data_odd" type="user.UserId">
+                                                <td class="data_cell">الرئيسية</td>
+                                                <td class="data_cell">DashBoard</td>
+                <td class="data_cell"><div class="fa fa-tachometer fa-fw"></div></td>
+                                                <td class="data_cell col-lg-2">
+            <button class="btn btn-xs btn-primary edit_cell" data-toggle="modal" data-target="#add_new_menu"><i class="fa fa-pencil"></i>Edit</button>
+                   
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>		
+</div>
+</div>	
+    </div>	
+	<div class="tab-pane fade" id="profiles">
+<div class="panel-body avatar_profile">
+                            <div class="col-md-9">
+                                <table class="table table-hover">
+                                    <tbody>
+                                                <tr>
+                                                    <td><i class="fa fa-font"></i>Company Name</td>
+                                                    <td id="card-name">MaktApp CO </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-font"></i>Number Of Users</td>
+                                                    <td id="card-name">10 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-font"></i>Expiration Date</td>
+                                                    <td id="card-name">8/15/2015 </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-font"></i>Is Enabled</td>
+                                                    <td id="card-name">True </td>
+    </tr>
+                                            <tr>
+                                                <td><i class="fa fa-list-ul"></i>Email Address</td>
+                                                <td id="card-name">Waleed@maktApp.COM</td>
+                                            </tr>
+                                    
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row" id="card">
+                                <div class="col-md-3 headshot">
+                       <figure><img class="thumbnail" width="200" height="200" alt="" src="_content/img/avatars/555831_10202000175116884_1881670780_n.jpg">
+       <button class="btn btn-xs btn-primary edit_cell" data-toggle="modal" data-target="#add_new_profile"><i class="fa fa-pencil"></i>Edit</button>									
+</figure>
+                                                    
+
+                                </div>
+                            </div>
+                        </div>
+    </div>	
+	 </div>
+	</div>
+	</div>
+	</div>
+								<!-- BOX -->
+
+								<!-- /BOX -->
+							</div>
+
+
+						</div>
+						<!-- /PAGE HEADER -->
+							<div class="modal fade" id="add_new_profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Edit Account</h4>
+            </div>
+  <form id="form-send-article-to-friend" class="form-horizontal" role="form" novalidate="novalidate">
+				      <div class="modal-body">
+
+				          <div class="form-group">
+				            <label class="col-sm-3">CompanyName :</label>
+				            <div class="col-sm-9">
+				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter CompanyName">
+				            </div>
+				          </div>
+			  
+					         <div class="form-group">
+				            <label class="col-sm-3">EmailAddress :</label>
+				            <div class="col-sm-9">
+				              <input type="email" class="form-control" rows="3" name="myName" placeholder="Enter Email">
+				            </div>
+				          </div>
+		  
+			<div class="form-group">
+										<label class="col-sm-3">Logo</label>
+										<div class="col-sm-9">	<input type="file" class="test"></div>
+									</div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="submit" class="btn btn-primary btn-md">Add</button>
+				        <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Cancel</button>
+				      </div>
+			        </form>
+
+        </div>
+    </div>
+</div>
+
+						<div class="modal fade" id="add_new_user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add User</h4>
+            </div>
+  <form id="form-send-article-to-friend" class="form-horizontal" role="form" novalidate="novalidate">
+				      <div class="modal-body">
+
+				          <div class="form-group">
+				            <label class="col-sm-3">UserName :</label>
+				            <div class="col-sm-9">
+				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter UserName">
+				            </div>
+				          </div>
+			       <div class="form-group">
+				            <label class="col-sm-3">Password :</label>
+				            <div class="col-sm-9">
+				              <input type="password" class="form-control" rows="3" name="myName" placeholder="Enter Password">
+				            </div>
+				          </div>
+					         <div class="form-group">
+				            <label class="col-sm-3">UserEmailAddress :</label>
+				            <div class="col-sm-9">
+				              <input type="email" class="form-control" rows="3" name="myName" placeholder="Enter Email">
+				            </div>
+				          </div>
+		       <div class="form-group">
+				            <label class="col-sm-3">FullName :</label>
+				            <div class="col-sm-9">
+				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter FullName">
+				            </div>
+				          </div>
+			<div class="form-group">
+										<label class="col-sm-3">File</label>
+										<div class="col-sm-9">	<input type="file" class="test"></div>
+									</div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="submit" class="btn btn-primary btn-md">Add</button>
+				        <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Cancel</button>
+				      </div>
+			        </form>
+
+        </div>
+    </div>
+</div>
+
+						<div class="modal add_new_menu fade" id="add_new_menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add Menu Item</h4>
+            </div>
+  <form id="form-send-article-to-friend" class="form-horizontal" role="form" novalidate="novalidate">
+				      <div class="modal-body">
+
+				          <div class="form-group">
+				            <label class="col-sm-3">MenuArTitle :</label>
+				            <div class="col-sm-9">
+				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter MenuArTitle">
+				            </div>
+				          </div>
+			
+		       <div class="form-group">
+				            <label class="col-sm-3">MenuEnTitle :</label>
+				            <div class="col-sm-9">
+				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter MenuEnTitle">
+				            </div>
+				          </div>
+		       <div class="form-group">
+				            <label class="col-sm-3">IsEnabled :</label>
+				            <div class="col-sm-9">
+				        			<div class="checkbox ">
+                        <input  type="checkbox" id="inlineRadio2" value="" name="inlineRadio2">
+                        <label for="inlineRadio2"></label>
+	
+                    </div>
+				            </div>
+				          </div>
+      <div class="form-group">
+				            <label class="col-sm-3">MenuOrder :</label>
+				            <div class="col-sm-9">
+<select class="form-control" id="MenuOrder" name="MenuOrder">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="11">11</option>
+<option value="10">10</option>
+</select>
+				            </div>
+				          </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="submit" class="btn btn-primary btn-md">Add</button>
+				        <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Cancel</button>
+				      </div>
+			        </form>
+
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------>
+						
+					</div>
+	<script type="text/javascript" src="_content/js/bootstrap-toggle/bootstrap-toggle.js"></script>
+	<script type="text/javascript" src="_content/js/Custom.js"></script>
+<script>
+		jQuery(document).ready(function() {	
+			
+			// nultiple initialize
+			$('.test').filestyle({
+				buttonName : 'btn-primary'
+			});
+					$(".datepicker").datepicker();
+
+			$('.setting_bl .doc_categry').click(function(){
+			$('.setting_bl .doc_categry').removeClass('active')
+			$(this).addClass('active')
+			})
+			
+
+				$('.filter-content').hover(function() {
+			var hoverContent = $(this).children('.hover-content');
+			hoverContent.removeClass('fadeOut').addClass('animated fadeIn').show();
+		}, function() {
+			var hoverContent = $(this).children('.hover-content');
+			hoverContent.removeClass('fadeIn').addClass('fadeOut');
+		});
+			
+			
+			$('.advance_search .dropdown-menu').click(function(event){
+     event.stopPropagation();
+ });
+			$(document).on('click','.confirm-dialog',function(){
+			bootbox.confirm("Are you sure?", function(result){});
+		});
+			$('#toggle-event').change(function() {
+				if($(this).prop('checked')==true){
+				$('.list_view').show();
+				$('.folder_view').hide();
+				}
+	else if($(this).prop('checked')==false){
+				$('.list_view').hide();
+				$('.folder_view').show();
+				}
+				//	alert($(this).prop('checked'))
+    })
+App.setPage("widgets_box");  //Set current page
+			App.init(); //Initialise plugins and elements
+		});
+	</script>
