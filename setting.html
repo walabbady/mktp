@@ -41,7 +41,7 @@
 	<div class="row setting_bl">
 <div class="col-md-3">
 <a data-toggle="modal" data-target="#add_new_lookup" id="" class="btn btn-inverse tip new_lookup " href="" data-original-title="" title="">
-<i class="fa  fa fa-plus"></i>New_Lookup</a>
+<i class="fa  fa fa-plus"></i>New Lookup</a>
 <div class="doc_categry active"><i class="fa fa-tags"></i>ContactType</div>
 <div class="doc_categry"><i class="fa fa-user"></i>PeriortyType</div>
 <div class="doc_categry"><i class="fa fa-sitemap"></i>TransactionType</div>
@@ -131,7 +131,7 @@
 
 		<div class="row setting_bl">
 <a data-toggle="modal" data-target="#add_new_user" id="" class="btn btn-inverse tip new_user col-md-3 " href="" data-original-title="" title="">
-<i class="fa  fa fa-plus"></i>New_User</a>
+<i class="fa  fa fa-plus"></i>New User</a>
 <div class="col-md-12">
 <div class="box-body" id="LookupsDiv">
                                 <table class="qlabs_grid_container ">
@@ -196,6 +196,17 @@
                 <td class="data_cell"><div class="fa fa-tachometer fa-fw"></div></td>
                                                 <td class="data_cell col-lg-2">
             <button class="btn btn-xs btn-primary edit_cell" data-toggle="modal" data-target="#add_new_menu"><i class="fa fa-pencil"></i>Edit</button>
+      <button class="btn btn-xs btn-danger edit_cell" data-toggle="modal" data-target="#add_new_menu"><i class="fa fa-times"></i>Disable</button>
+                   
+                                                </td>
+                                            </tr>
+	                  <tr class="data_odd" type="user.UserId">
+                                                <td class="data_cell">الرئيسية</td>
+                                                <td class="data_cell">DashBoard</td>
+                <td class="data_cell"><div class="fa fa-tachometer fa-fw"></div></td>
+                                                <td class="data_cell col-lg-2">
+            <button class="btn btn-xs btn-primary edit_cell" data-toggle="modal" data-target="#add_new_menu"><i class="fa fa-pencil"></i>Edit</button>
+      <button class="btn btn-xs btn-success  edit_cell" data-toggle="modal" data-target="#add_new_menu"><i class="fa fa-check"></i>Enable</button>
                    
                                                 </td>
                                             </tr>
@@ -212,26 +223,32 @@
                                 <table class="table table-hover">
                                     <tbody>
                                                 <tr>
-                                                    <td><i class="fa fa-font"></i>Company Name</td>
+                                                   
+							<td><i class="fa fa-bookmark-o"></i>Company Name</td>
                                                     <td id="card-name">MaktApp CO </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i class="fa fa-font"></i>Number Of Users</td>
+                                                    <td><i class="fa fa-users"></i>Number Of Users</td>
                                                     <td id="card-name">10 </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i class="fa fa-font"></i>Expiration Date</td>
+                                                    <td><i class="fa fa-calendar"></i>Expiration Date</td>
                                                     <td id="card-name">8/15/2015 </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i class="fa fa-font"></i>Is Enabled</td>
+                                                    <td><i class="fa fa-check"></i>Is Enabled</td>
                                                     <td id="card-name">True </td>
     </tr>
                                             <tr>
-                                                <td><i class="fa fa-list-ul"></i>Email Address</td>
-                                                <td id="card-name">Waleed@maktApp.COM</td>
+                                              
+								<td><i class="fa fa-envelope-o"></i>Email Address</td>
+                                <td id="card-name">Waleed@maktApp.COM</td>
                                             </tr>
-                                    
+                                                     <tr>
+                                              
+								<td><i class="fa fa-mobile"></i>Phone Number</td>
+                                <td id="card-name">+986466764</td>
+                                            </tr>
 
                                     </tbody>
                                 </table>
@@ -270,19 +287,24 @@
 				      <div class="modal-body">
 
 				          <div class="form-group">
-				            <label class="col-sm-3">CompanyName :</label>
+				            <label class="col-sm-3">Company Name :</label>
 				            <div class="col-sm-9">
 				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter CompanyName">
 				            </div>
 				          </div>
 			  
 					         <div class="form-group">
-				            <label class="col-sm-3">EmailAddress :</label>
+				            <label class="col-sm-3">Email Address :</label>
 				            <div class="col-sm-9">
 				              <input type="email" class="form-control" rows="3" name="myName" placeholder="Enter Email">
 				            </div>
 				          </div>
-		  
+		           <div class="form-group">
+				            <label class="col-sm-3">Phone Number  :</label>
+				            <div class="col-sm-9">
+				              <input type="text" class="form-control" rows="3" name="phoneNum" placeholder="Enter Phone Number">
+				            </div>
+				          </div>
 			<div class="form-group">
 										<label class="col-sm-3">Logo</label>
 										<div class="col-sm-9">	<input type="file" class="test"></div>
@@ -309,7 +331,7 @@
 				      <div class="modal-body">
 
 				          <div class="form-group">
-				            <label class="col-sm-3">UserName :</label>
+				            <label class="col-sm-3">User Name :</label>
 				            <div class="col-sm-9">
 				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter UserName">
 				            </div>
@@ -321,19 +343,19 @@
 				            </div>
 				          </div>
 					         <div class="form-group">
-				            <label class="col-sm-3">UserEmailAddress :</label>
+				            <label class="col-sm-3">Email Address :</label>
 				            <div class="col-sm-9">
 				              <input type="email" class="form-control" rows="3" name="myName" placeholder="Enter Email">
 				            </div>
 				          </div>
 		       <div class="form-group">
-				            <label class="col-sm-3">FullName :</label>
+				            <label class="col-sm-3">Full Name :</label>
 				            <div class="col-sm-9">
 				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter FullName">
 				            </div>
 				          </div>
 			<div class="form-group">
-										<label class="col-sm-3">File</label>
+										<label class="col-sm-3">File :</label>
 										<div class="col-sm-9">	<input type="file" class="test"></div>
 									</div>
 				      </div>
@@ -358,30 +380,21 @@
 				      <div class="modal-body">
 
 				          <div class="form-group">
-				            <label class="col-sm-3">MenuArTitle :</label>
+				            <label class="col-sm-3">ArTitle :</label>
 				            <div class="col-sm-9">
 				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter MenuArTitle">
 				            </div>
 				          </div>
 			
 		       <div class="form-group">
-				            <label class="col-sm-3">MenuEnTitle :</label>
+				            <label class="col-sm-3">EnTitle :</label>
 				            <div class="col-sm-9">
 				              <input type="text" class="form-control" rows="3" name="myName" placeholder="Enter MenuEnTitle">
 				            </div>
 				          </div>
-		       <div class="form-group">
-				            <label class="col-sm-3">IsEnabled :</label>
-				            <div class="col-sm-9">
-				        			<div class="checkbox ">
-                        <input  type="checkbox" id="inlineRadio2" value="" name="inlineRadio2">
-                        <label for="inlineRadio2"></label>
-	
-                    </div>
-				            </div>
-				          </div>
+		 
       <div class="form-group">
-				            <label class="col-sm-3">MenuOrder :</label>
+				            <label class="col-sm-3">Order :</label>
 				            <div class="col-sm-9">
 <select class="form-control" id="MenuOrder" name="MenuOrder">
 <option value="1">1</option>
