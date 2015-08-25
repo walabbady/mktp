@@ -1228,13 +1228,13 @@ font-size: 45px !important;
   width: 496px;
   display: block;
   position: relative;
-  float: right;  background-color: #fff;
+  float: right;  background-color: #fff;overflow: hidden
 }
 .login-wrapper .login-container .login_bl{
 	  margin-top: 30px;  margin-left: 30px;  margin-right: 30px;
 }
 .login_bl img{  margin: auto;
-  display: table;}
+  display: table;cursor: pointer}
 form.form-login .title_log {
 float: left;
   position: relative;
@@ -1290,7 +1290,7 @@ color: #ffffff;
 position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgb(25, 100, 158);
+  background-color: rgb(25, 100, 158);cursor: pointer
 }
 .login-container .signup{
 position: absolute;
@@ -1484,7 +1484,7 @@ right: 0;
 background-color: rgb(251, 251, 251);
   padding-top: 15px;
   padding-bottom: 15px;
-  border: 1px solid #E9E9E9;
+  border: 1px solid #E9E9E9;width: 100%
 }
 .btn_options a,.btn_options button{
 
@@ -1897,7 +1897,7 @@ border: none
 .pop_over{
 position: absolute;
   Z-INDEX: 876;
-  right: -1000px;
+  right: -2000px;
   background-color: #FFF;
   border: 2px solid #DDD;
   top: 0px;
@@ -2084,6 +2084,59 @@ a.new_lookup {
 }
 a.new_user {
     margin-left: 25px;
+}
+.form-login{    position: absolute;
+    right: 25px;
+    width: 90%;}
+.form-forget,.form-change_p{    position: absolute;
+    right: 1000px;
+    width: 90%;}
+form.form-forget .title_log,.form-change_p .title_log{
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    border-bottom: 1px solid #dbe0e2;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    color: #409BD4;
+    font-size: 30px;
+}
+form.form-forget .form-group i,.form-change_p .form-group i{
+    color: #CCCCCC;
+    display: block !important;
+    font-size: 16px;
+    height: 16px;
+    margin: 9px 2px 4px 10px;
+    position: absolute !important;
+    text-align: center;
+    width: 16px;
+    z-index: 1;
+    top: 0;
+}
+form.form-forget .form-group,.form-change_p .form-group{
+    clear: both;
+    display: block;
+    position: relative;
+}
+form.form-forget input ,.form-change_p input{
+    border-radius: 0;
+    font-style: oblique;
+    clear: both;
+    padding-left: 42px;
+}
+form.form-forget .line ,.form-change_p .line{
+    position: absolute;
+    bottom: 0px;
+    height: 4px;
+    width: 230px;
+    background-color: rgb(64, 155, 212);
+}
+
+form.form-forget p,.form-change_p p{
+      clear: both;
+    margin-bottom: 15px;
+    color: #333;
 }
 @media only screen and (max-width: 1200px){
 .btn_group_section{width: auto;

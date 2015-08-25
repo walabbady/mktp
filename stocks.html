@@ -185,7 +185,7 @@
 </div>
 <div class="col-md-12">
 <div class="mt10 mb10">
-<div class="scroller" data-height="250px" data-always-visible="1" data-rail-visible="1">
+<div class="scroller" data-height="280px" data-always-visible="1" data-rail-visible="1">
 <table class="table table_trans">
         <thead>
           <tr>
@@ -686,18 +686,22 @@
 	<script type="text/javascript" src="_content/js/bootstrap-toggle/bootstrap-toggle.js"></script>
 	<script type="text/javascript" src="_content/js/Custom.js"></script>
 <script>
-		jQuery(document).ready(function() {	
+		jQuery(document).ready(function() {
+header=$('header').height()
+p_header=$('.page-header').height()
+window_size = $(window).height()-header-p_header;
+$('.stock_view').css({'height':window_size})
 /////Check if Arabic style exist [you must change it to  check session Lang]
 scriptName="arabic.css";
 if($("link[href*='"+scriptName+"']").length==0){
 direc_initial={right:0};
 direc_swap={right:-500};
-direc_hide={right:-1000};
+direc_hide={right:-2000};
 }		
 else{
 direc_initial={left:0};
 direc_swap={left:-500};
-direc_hide={left:-1000};
+direc_hide={left:-2000};
 
 }		
 			
@@ -711,7 +715,8 @@ direc_hide={left:-1000};
 				}
 				else{
 				$('.pop_over').animate(direc_swap,200)		
-				$('.pop_over').animate(direc_initial,200)		
+				$('.pop_over').animate(direc_initial,200)	
+
 				}
 			})
 			$('.stock_view .stock_close').click(function(event){

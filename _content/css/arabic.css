@@ -2594,7 +2594,7 @@ table.stocks th:first-child {
 .pop_over {
   position: absolute;
   Z-INDEX: 876;
-  left: -1000px;
+  left: -2000px;
   background-color: #fff;
   border: 1px solid #DDD;
   top: 0px;
