@@ -2088,9 +2088,13 @@ a.new_user {
 .form-login{    position: absolute;
     right: 25px;
     width: 90%;}
-.form-forget,.form-change_p{    position: absolute;
+.form-forget{    position: absolute;
     right: 1000px;
     width: 90%;}
+.form-change_p{
+    right: 25px;
+    width: 90%;
+}
 form.form-forget .title_log,.form-change_p .title_log{
     float: left;
     position: relative;
@@ -2137,6 +2141,14 @@ form.form-forget p,.form-change_p p{
       clear: both;
     margin-bottom: 15px;
     color: #333;
+}
+.login_back{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.form-control-feedback{
+    right: 10px;
+    color: #a94442 !important;
 }
 @media only screen and (max-width: 1200px){
 .btn_group_section{width: auto;
