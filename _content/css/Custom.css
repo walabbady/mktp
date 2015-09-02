@@ -2225,3 +2225,7 @@ float: none;
   background-size: 250px;
 }
 .small_logo{display: block;  display: block !important;}
+.alert_msg{
+margin-top: 15px
+}
+.alert_msg .alert{display: none}

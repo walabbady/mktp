@@ -103,6 +103,12 @@
                 </div>
 
                 <button class="btn btn-primary btn-cons m-t-10" type="submit">Sign in</button>
+				<div class="alert_msg">
+				<div class="alert alert-danger">
+	  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Error!</strong>  Invalid Email Address or Password.
+</div>
+				</div>
             </form>
             <form id="form-forget" class="form-forget" role="form" action="login.html">
                 <div class="title_log"><div class="line"></div><span>Forget Password</span></div>
@@ -188,6 +194,9 @@
 	    $('[data-toggle="tooltip"]').tooltip()
 
 var myArray = ['bg1.jpg',
+			   'bg2.jpg',
+			   'bg3.jpg',
+			   'bg4.jpg',
 			   'bg5.jpg',
 			  
 			  ]; 	
@@ -199,13 +208,7 @@ $('.bg-pic img').attr('src','_content/img/bg/'+rand);
 
 $('.form-login').submit(function(event){
 event.preventDefault();
-Message_from_server="Email Not Found !"
-$('i.form-control-feedback').remove()
-$('input[name=emailAddress]').after('<i data-toggle="tooltip" class="form-control-feedback fa fa-times"></i>')
-$('i.form-control-feedback').tooltip({
-        title : Message_from_server
-    })
-.tooltip('show')
+$(".alert_msg .alert").slideDown('fast')
 
 })
 
